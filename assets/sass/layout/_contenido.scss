@@ -1,0 +1,220 @@
+#seccion1 {
+  height: 122vh;
+}
+
+.contenido-texto {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.seccion1__imagen {
+  background-image: url(../img/bg-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.grafico__titulo {
+  grid-column-start: 4;
+  grid-column-end: 10;
+  text-align: center;
+}
+
+#seccion2 {
+  height: 30vh;
+}
+
+.titulo-caracteristicas {
+  text-align: center;
+}
+
+.imagen__caracteristicas {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  width: 100%;
+  animation: grafico 4s infinite;
+}
+
+.texto__caracteristica {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  text-align: justify;
+}
+
+.grafico__Texto {
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+#seccion3 {
+  height: 120vh;
+}
+
+.seccion3__imagen {
+  background-image: url(../img/bg-price.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  z-index: -1;
+}
+
+.titulo-precios {
+  color: $white;
+  text-align: center;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 3;
+}
+
+.carta-1 {
+  background-color: $white;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.carta1__contenido{
+  padding: 20px;
+  hr {
+    margin-top: 30px;
+  }
+  ul  {
+    margin-bottom: 6rem;
+  }
+}
+
+.carta__boton {
+  background-color: $bblue;
+  border: none;
+  color: #ffffff;
+  padding: 8px 75px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.carta-2 {
+  background-color: $white;
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.carta2__contenido{
+  padding: 20px;
+  hr {
+    margin-top: 30px;
+  }
+  ul  {
+    margin-bottom: 6rem;
+  }
+}
+
+/*MEDIA*/
+
+@media (max-width: 768px) {
+  .contenido-texto {
+    grid-column-start: 3;
+    grid-column-end: 14;
+ }
+
+ .seccion1__imagen {
+   background-image: url(../img/bg-hero.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   grid-column-start: 1;
+   grid-column-end: 16;
+   grid-row-start: 4;
+   grid-row-end: 7;
+   background-position-x: right;
+    }
+
+  /*SECCION2*/
+
+   .titulo-caracteristicas{
+     margin-top: -8rem;
+   }
+
+    .imagen__caracteristicas  {
+      grid-column-start: 3;
+      grid-column-end: 14;
+    }
+
+    .texto__caracteristica {
+      grid-column-start: 3;
+      grid-column-end: 14;
+      margin-top: 2rem;
+    }
+
+    /*SECCION3*/
+
+    #seccion3 {
+      margin-top: 8rem;
+      height: 200vh;
+      grid-template-rows: repeat(16, 1fr);
+    }
+
+    .titulo-precios {
+      grid-column-start: 1;
+      grid-column-end: 16;
+      grid-row-start: 4;
+    }
+    .seccion3__imagen {
+      background-image: url(../img/bg-price.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column-start: 1;
+      grid-column-end: 16;
+      grid-row-start: 1;
+      grid-row-end: 17;
+      z-index: -1;
+      background-position: 60%;
+    }
+
+    .carta-1 {
+      background-color: $white;
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 5;
+      grid-row-end: 10;
+    }
+
+    .carta1__contenido ul {
+      margin-bottom: 6rem;
+    }
+
+
+    .carta__boton {
+      background-color: $bblue;
+      border: none;
+      color: #ffffff;
+      padding: 7px 20%;
+      margin-left: 8%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .carta-2 {
+      background-color: $white;
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 11;
+      grid-row-end: 16;
+    }
+
+    .carta2__contenido ul {
+      margin-bottom: 6rem;
+    }
+  }

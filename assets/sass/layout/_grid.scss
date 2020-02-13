@@ -1,0 +1,23 @@
+.row1 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100vw;
+}
+//
+// .row2 {
+//   margin-top: 2rem;
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-template-rows: repeat(2, 157px);
+//   width: 100vw;
+// }
+//
+// .row3 {
+//   margin-top: 2rem;
+//   display: grid;
+//   grid-template-columns: repeat(15, 1fr);
+//   grid-template-rows: repeat(6, 157px);
+//   width: 100vw;
+// }

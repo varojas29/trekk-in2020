@@ -1,0 +1,43 @@
+.bg-black {
+  background-color: $onyx;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  width: 100%;
+  background-color: $onyx;
+
+}
+
+.menu, .copyright {
+  display: flex;
+  a {
+    margin-left: 10px;
+    color: $white;
+
+  }
+}
+
+.menu, .copyright h4 {
+  margin-left:10px;
+  margin-right: 50px;
+  font-size: $small;
+  color: $white;
+}
+
+.menu {
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer-flex {
+    display: inline-block;
+ }
+.copyright {
+  display: inline;
+  text-align: center;
+}
+}
